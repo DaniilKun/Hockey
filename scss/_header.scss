@@ -1,0 +1,61 @@
+header {
+  background: #131111;
+}
+.head {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__lang {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    &__ru {
+      color: #d8d8d8;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    &__slesh {
+      color: #7d7d7d;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    &__en {
+      color: #7d7d7d;
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+}
