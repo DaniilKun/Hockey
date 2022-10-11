@@ -2,11 +2,17 @@ header {
   background: #131111;
 }
 .head {
-  padding: 25px 0;
+  padding: 13px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__lang {
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__lang {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -40,9 +46,30 @@ header {
       flex-grow: 0;
     }
   }
+  }
+  
 
-  a{
+  a {
     text-decoration: none;
+    color: #7d7d7d;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+
+  a:hover {
+    color: #bcbcbc;
+    font-weight: 600;
+
+  }
+
+  a:focus {
+    color: #bcbcbc;
+    font-weight: 600;
+
   }
 
   &__menu {
@@ -53,9 +80,22 @@ header {
     gap: 24px;
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     font-feature-settings: "pnum" on, "lnum" on;
+  }
+
+  &__icon{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    &__sign{ 
+      gap: 16px;
+      display: flex;
+
+      a{display: block;}
+    }
   }
 }

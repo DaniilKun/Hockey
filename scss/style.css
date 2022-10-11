@@ -53,12 +53,17 @@ header {
 }
 
 .head {
-  padding: 25px 0;
+  padding: 13px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.head__lang {
+.head__logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.head__logo__lang {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -71,19 +76,19 @@ header {
   line-height: 22px;
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.head__lang__ru {
+.head__logo__lang__ru {
   color: #d8d8d8;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.head__lang__slesh {
+.head__logo__lang__slesh {
   color: #7d7d7d;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
-.head__lang__en {
+.head__logo__lang__en {
   color: #7d7d7d;
   flex: none;
   order: 2;
@@ -91,6 +96,21 @@ header {
 }
 .head a {
   text-decoration: none;
+  color: #7d7d7d;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.head a:hover {
+  color: #bcbcbc;
+  font-weight: 600;
+}
+.head a:focus {
+  color: #bcbcbc;
+  font-weight: 600;
 }
 .head__menu {
   display: flex;
@@ -100,13 +120,46 @@ header {
   gap: 24px;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-feature-settings: "pnum" on, "lnum" on;
+}
+.head__icon {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.head__icon__sign {
+  gap: 16px;
+  display: flex;
+}
+.head__icon__sign a {
+  display: block;
 }
 
 .section {
   max-width: 1218px;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Bold.ttf);
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
