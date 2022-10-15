@@ -162,4 +162,31 @@ header {
   font-family: "Raleway";
   src: url(../fonts/Raleway-Bold.ttf);
   font-weight: 700;
+}
+.preview {
+  background: #131111;
+  height: 910px;
+}
+.preview__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+}
+.preview__circles {
+  display: flex;
+}
+.preview__circles__orange {
+  position: absolute;
+  left: 0;
+  top: 151px;
+  background: radial-gradient(50% 50% at 50% 50%, #f64f00 0%, rgba(246, 79, 0, 0) 100%);
+  filter: blur(32px);
+}
+.preview__circles__blue {
+  position: absolute;
+  left: 600px;
+  top: 90px;
+  background: radial-gradient(50% 50% at 50% 50%, #0178f3 0%, rgba(1, 120, 243, 0) 100%);
+  filter: blur(32px);
 }/*# sourceMappingURL=style.css.map */

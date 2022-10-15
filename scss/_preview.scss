@@ -1,0 +1,42 @@
+.preview {
+  background: #131111;
+  height: 910px;
+
+  &__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 28px;
+  }
+
+  &__circles {
+    display: flex;
+
+    &__orange {
+      position: absolute;
+      left: 0;
+      top: 151px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #f64f00 0%,
+        rgba(246, 79, 0, 0) 100%
+      );
+      filter: blur(32px);
+    }
+
+    &__blue {
+      position: absolute;
+      left: 600px;
+      top: 90px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #0178f3 0%,
+        rgba(1, 120, 243, 0) 100%
+      );
+      filter: blur(32px);
+        }
+  }
+}
+
+
+
